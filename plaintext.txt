@@ -1,0 +1,9 @@
+Also Chars and Bytes are string iterator types, 
+but while the next function of Chars returns the next character of the string, 
+the next function of Bytes returns the next byte of the string. 
+These string functions are both different from the as bytes function, 
+which returns a slice reference on the bytes of the string It is also quite 
+typical to iterate over a slice, an array, or a vector. Strings are not iterators, 
+slices, arrays, nor vectors. But, just like a string iterator is obtained by 
+invoking the chars function, so a slice, array, or vector iterator is obtained 
+by invoking the iter function.

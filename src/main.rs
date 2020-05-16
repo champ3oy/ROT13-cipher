@@ -1,10 +1,21 @@
 mod app;
 
 fn main() {
-    let input = std::env::args().last().unwrap();
+    let mut _count = 0;
+    let args: Vec<String> = std::env::args().collect();
 
-    println!("{:?}", input);
+    let mut arr: Vec<&str> = vec![];
 
+    for argument in args.iter() {
+        arr.push(&*argument)
+    }
 
-    app::_cipher(&*input);
+    if args.len() > 2 {
+        let index = arr.iter().position(|&str| str == "file").unwrap();
+        if index == 1 {
+            app::_cipher_file(args.last().unwrap());
+        }
+    } else if args.len() == 2 {
+        app::_cipher_txt(args.last().unwrap());
+    }
 }
