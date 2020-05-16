@@ -20,4 +20,7 @@ You can cipher texts in the cmd with `cargo run "text to cipher"` `// qawq ql bf
 MIT
 
 ## About Me
-@cirlorm_io ["http://twitter.con/cirlorm_io"]
+[@cirlorm_io] ("http://twitter.con/cirlorm_io")
+
+
+<a href="https://www.buymeacoffee.com/Cirlorm" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-red.png" alt="Buy Me A Coffee" height="50" ></a>
